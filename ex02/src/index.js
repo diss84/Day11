@@ -17,10 +17,11 @@ function myArrayFunction(arr) {
         console.log(averageDayTemp[i][k]);
         }
     }
+    
 
     // Only change code above this line
     return averageDayTemp;
 }
 
-console.log(myArrayFunction());
+console.log(myArrayFunction(temps.push[temps]));
 module.exports = myArrayFunction;
