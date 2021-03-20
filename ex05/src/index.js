@@ -4,7 +4,7 @@ function myNestedFunction(arr) {
     // Only change code below this line
     var arr = myNestedArray;
     // Only change code above this line
-return myNestedArray;
+return arr;
 }
 console.log(myNestedFunction());    // Change this line
 module.exports = myNestedFunction;
