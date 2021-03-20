@@ -4,27 +4,27 @@ var temps = [
    [29, 27, 55, 36],
    [17, 27, 42, 46],
    [29, 52, 21, 64],
-    [91, 27, 31, 61]
+   [91, 27, 31, 61]
 ];
 
 // End of temps array
 function myArrayFunction(arr) {
-    var newTemps = [...arr];
-    var averageDayTemp = [];
+    var newTemps = [...arr]; //[][][][][]
+    var averageDayTemp = []; //
     // Only change code below this line
-    var sum = 0;
-    var count = 0;
-    for (var i = 0; i < newTemps; i++){
-        for (j = 0; j < newTemps[i].lenght; i++) {
-            sum += newTemps[i][j];
-            count += 1;
-        }
-        var result = sum / count;
-        averageDayTemp.push(result);
-        count = 0;
-        sum = 0;
-    }
     
+    for (var i = 0; i < 5; i++) {
+        newTemps[i] = 0;
+        for (var j = 0; j < 4; j++) {
+            newTemps[i] += arr[i][j];
+        }
+        newTemps[i] /= 4;
+    }
+
+    for (var i = 0; i < 5; i++) {
+        averageDayTemp.push(newTemps[i]);
+    }
+
     // Only change code above this line
     return averageDayTemp;
 }

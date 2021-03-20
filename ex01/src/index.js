@@ -18,4 +18,5 @@ myArrayFunction(myArr)[2];
 
 console.log(myArrayFunction(myArr[2]));
 
+
 module.exports = myArrayFunction;
