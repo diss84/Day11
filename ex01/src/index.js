@@ -14,9 +14,9 @@ function myArrayFunction(myItems) {
     return myItems;
     // Only change code above this line
 }
-myArrayFunction(myArr)[2];
+myArrayFunction(myArr[2]);
 
-console.log(myArrayFunction(myArr[2]));
+console.log(myArrayFunction(myArr[3]));
 
 
 module.exports = myArrayFunction;
